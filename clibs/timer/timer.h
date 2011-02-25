@@ -22,11 +22,9 @@ struct timer_config{
 	}
 };
 
-QMap<qint32, timer_config*> timers;
-
+QMap<qint32, timer_config> timers;
 
 extern "C" {
-	void initTimer(qint32 timerId);
 	void setPeriod(qint32 timerId, qint32 period);
 	void setDuration(qint32 timerId, qint32 duration);
 	void setRestValue(qint32 timerId, double restValue);
@@ -35,9 +33,9 @@ extern "C" {
 	void startTimer(qint32 timerId);
 	void resetTimer(qint32 timerId);
 	void setTimerConfig(qint32 timerId, qint32 period, qint32 duration, double restValue, double actionValue);
+	void removeTimer(qint32 timerId);
 }
 
-void initTimer(qint32 timerId);
 void setPeriod(qint32 timerId, qint32 period);
 void setDuration(qint32 timerId, qint32 duration);
 void setRestValue(qint32 timerId, double restValue);
@@ -46,5 +44,6 @@ double getValue(qint32 timerId);
 void startTimer(qint32 timerId);
 void resetTimer(qint32 timerId);
 void setTimerConfig(qint32 timerId, qint32 period, qint32 duration, double restValue, double actionValue);
+void removeTimer(qint32 timerId);
 
 #endif // TIMER_H
