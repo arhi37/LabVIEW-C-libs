@@ -47,3 +47,12 @@ void resetTimer(qint32 timerId){
 	if(timers.contains(timerId))
 		timers[timerId]->startTime=QTime::currentTime();
 }
+
+void setTimerConfig(qint32 timerId, qint32 period, qint32 duration, double restValue, double actionValue){
+	if(!timers.contains(timerId))return;
+	timer_config *p=timers[timerId];
+	p->period=period;
+	p->duration=duration;
+	p->restValue=restValue;
+	p->actionValue=actionValue;
+}

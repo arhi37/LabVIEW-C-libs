@@ -34,6 +34,7 @@ extern "C" {
 	double getValue(qint32 timerId);
 	void startTimer(qint32 timerId);
 	void resetTimer(qint32 timerId);
+	void setTimerConfig(qint32 timerId, qint32 period, qint32 duration, double restValue, double actionValue);
 }
 
 void initTimer(qint32 timerId);
@@ -44,5 +45,6 @@ void setActionValue(qint32 timerId, double actionValue);
 double getValue(qint32 timerId);
 void startTimer(qint32 timerId);
 void resetTimer(qint32 timerId);
+void setTimerConfig(qint32 timerId, qint32 period, qint32 duration, double restValue, double actionValue);
 
 #endif // TIMER_H
