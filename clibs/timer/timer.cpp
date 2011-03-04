@@ -1,4 +1,4 @@
-#include "timer.h"
+﻿#include "timer.h"
 
 
 void setPeriod(qint32 timerId, qint32 period){
