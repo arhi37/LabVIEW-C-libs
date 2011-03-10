@@ -1,0 +1,6 @@
+﻿#ifndef FREQUENCYTEST_H
+#define FREQUENCYTEST_H
+
+
+
+#endif // FREQUENCYTEST_H
