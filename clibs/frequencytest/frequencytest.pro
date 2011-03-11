@@ -11,7 +11,8 @@ TEMPLATE = lib
 
 DEFINES += FREQUENCYTEST_LIBRARY
 
-SOURCES += frequencytest.cpp
+SOURCES += frequencytest.cpp \
+    ../MovingAverage/movingaverage.cpp
 
-HEADERS += frequencytest.h
-
+HEADERS += frequencytest.h \
+    ../MovingAverage/movingaverage.h
