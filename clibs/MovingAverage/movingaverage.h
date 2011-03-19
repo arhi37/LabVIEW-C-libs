@@ -22,7 +22,7 @@ public:
 };
 
 
-QMap<qint32, movingAverage*>	movAvMap;
+static QMap<qint32, movingAverage*>	movAvMap;
 
 extern "C" {
 	qint32 initMovingAverage();
