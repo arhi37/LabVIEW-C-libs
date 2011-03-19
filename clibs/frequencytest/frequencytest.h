@@ -29,7 +29,7 @@ struct sFrTest_state{
 	}
 };
 
-QMap<qint32, sFrTest_state*> sFrTestMap;
+static QMap<qint32, sFrTest_state*> sFrTestMap;
 
 extern "C"{
 	qint32 sInitFrTest();

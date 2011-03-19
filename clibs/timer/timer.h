@@ -22,7 +22,7 @@ struct timer_config{
 	}
 };
 
-QMap<qint32, timer_config> timers;
+static QMap<qint32, timer_config> timers;
 
 extern "C" {
 	void setPeriod(qint32 timerId, qint32 period);

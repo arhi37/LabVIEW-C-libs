@@ -10,9 +10,9 @@ struct pareto_config{
 	int size;
 };
 
-QList<double> numLogList;
+static QList<double> numLogList;
 
-QMap<qint32, pareto_config*>	paretoMap;
+static QMap<qint32, pareto_config*>	paretoMap;
 
 extern "C"{
 	qint32 initPareto();
