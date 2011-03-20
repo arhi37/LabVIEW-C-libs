@@ -81,7 +81,7 @@ qint32 getPareto(qint32 paretoId, double* countArray, double* numArray, qint32 a
 
 	QListIterator<double>	numLogListIt(numLogList);
 	QListIterator<double>	logListIt(pareto->logList);
-	for(int i=0;i<pareto->size;i++){
+	for(int i=pareto->size-1;i>=0;--i){
 		numArray[i]=numLogListIt.next();
 		countArray[i]=logListIt.next();
 	}
