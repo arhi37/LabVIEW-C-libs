@@ -1,8 +1,20 @@
 #include "breakpoint.h"
 
 
-qint32 BreakPoint(double *Xarr, double *Yarr, qint32 size, double* F, double* point){
+qint32 BreakPoint(double *Xarr, double *Yarr, qint32 size, double* F, double* point,
+				  double searchMin, double searchMax){
 	if(size<7)return 0;
+
+	int searchBegin=-1, searchEnd=-1;
+
+	for(int i=0;i<size;i++){
+		if(Xarr[i]<=searchMin)searchBegin=i;
+		if(Xarr[size-1-i]>=searchMax)searchEnd=size-i-1;
+	}
+
+	if(searchBegin<3)searchBegin=3;
+	if(searchEnd<0 || searchEnd>size-4)searchEnd=size-4;
+
 
 	double Mmin=-1;
 
@@ -30,7 +42,7 @@ qint32 BreakPoint(double *Xarr, double *Yarr, qint32 size, double* F, double* po
 				*(Yarr[j]-(b+a*(Xarr[j]-xSr)));
 	S/=size-2;
 
-	for(int i=3;i<size-3;i++){
+	for(int i=searchBegin;i<=searchEnd;i++){
 		double xSr1=0.0, ySr1=0.0, xySr1=0.0, xxSr1=0.0;
 		double a1, b1=0.0;
 		for(int j=0;j<i;j++){
