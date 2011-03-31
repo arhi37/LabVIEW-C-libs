@@ -1,4 +1,4 @@
-#ifndef FREQUENCYTEST_H
+﻿#ifndef FREQUENCYTEST_H
 #define FREQUENCYTEST_H
 
 #include "../MovingAverage/movingaverage.h"

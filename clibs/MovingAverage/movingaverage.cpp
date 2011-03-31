@@ -1,4 +1,4 @@
-#include "movingaverage.h"
+﻿#include "movingaverage.h"
 
 
 movingAverage::movingAverage(){

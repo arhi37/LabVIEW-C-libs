@@ -1,4 +1,4 @@
-#ifndef BREAKPOINT_H
+﻿#ifndef BREAKPOINT_H
 #define BREAKPOINT_H
 
 #include <QtCore>
