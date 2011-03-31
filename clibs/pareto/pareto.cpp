@@ -39,8 +39,8 @@ qint32 addData(qint32 paretoId, double* data, qint32 size){
 	double localMin=data[0];
 
 	for(int i=0;i<size;i++){
-		if(data[i]<=0)return 0;
-		vData[i]==data[i];
+		if(data[i]<=0)return 1;
+		vData[i]=data[i];
 		if(data[i]<localMin)
 			localMin=data[i];
 	}
