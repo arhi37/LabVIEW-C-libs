@@ -1,4 +1,4 @@
-#ifndef PARETO_H
+﻿#ifndef PARETO_H
 #define PARETO_H
 
 #include <QtCore>

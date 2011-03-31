@@ -1,4 +1,4 @@
-#ifndef MOVINGAVERAGE_H
+﻿#ifndef MOVINGAVERAGE_H
 #define MOVINGAVERAGE_H
 
 #include <QtCore>

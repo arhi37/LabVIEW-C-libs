@@ -1,4 +1,4 @@
-#include "breakpoint.h"
+﻿#include "breakpoint.h"
 
 
 qint32 BreakPoint(double *Xarr, double *Yarr, qint32 size, double* F, double* point,
