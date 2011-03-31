@@ -1,4 +1,4 @@
-#include "frequencytest.h"
+﻿#include "frequencytest.h"
 
 qint32 sInitFrTest(){
 	qint32 id;

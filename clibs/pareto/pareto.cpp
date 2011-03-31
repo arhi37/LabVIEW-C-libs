@@ -1,4 +1,4 @@
-#include "pareto.h"
+﻿#include "pareto.h"
 #include <cmath>
 
 qint32 initPareto(){
